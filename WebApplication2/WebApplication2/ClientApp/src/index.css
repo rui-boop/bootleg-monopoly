@@ -21,3 +21,65 @@
 .numberdisplay {
     font-family: 'Times New Roman';
 }
+
+.Table {
+    display: table;
+}
+
+.Title {
+    display: table-caption;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.Heading {
+    width: 60px;
+    height: 20px;
+    display: table-row;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Row {
+    display: table-row;
+    width: 60px;
+    height: 80px;
+}
+
+.Cell {
+    width: 60px;
+    display: table-cell;
+    border: solid;
+    border-width: thin;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+.RedProperty {
+    background-color: red;
+}
+
+.YellowProperty {
+    background-color: yellow;
+}
+
+.Train {
+    background-color: black;
+}
+
+.WaterElectric {
+    background-color: lightgray;
+}
+
+.Square {
+    border-bottom: hidden;
+}
+
+.SquareBottom {
+    border-top: hidden;
+}
+
+.HeaderSquare {
+}

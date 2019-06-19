@@ -85,10 +85,86 @@ export class Dice extends React.Component {
                 <div> Money: ${this.state.players.money} </div>
                 <div> Position: {this.state.players.position} </div>
                 <div> turn: {this.state.turn} </div>
-                    <div>
+                <div>
                     <i class="fas fa-dog"></i>
+                </div>
+                <div class="Table">
+                    <div class="Title">
+                        <p>Bootleg Monopoly</p>
                     </div>
+                    <div class="Heading">
+                        <div class="Cell Square HeaderSquare">
+                            <p></p>
+                        </div>
+                        <div class="Cell RedProperty">
+                            <p></p>
+                        </div>
+                        <div class="Cell">
+                            <p></p>
+                        </div>
+                        <div class="Cell RedProperty">
+                            <p></p>
+                        </div>
+                        <div class="Cell RedProperty">
+                            <p></p>
+                        </div>
+                        <div class="Cell Train">
+                            <p></p>
+                        </div>
+                        <div class="Cell YellowProperty">
+                            <p></p>
+                        </div>
+                        <div class="Cell YellowProperty">
+                            <p></p>
+                        </div>
+                        <div class="Cell WaterElectric">
+                            <p></p>
+                        </div>
+                        <div class="Cell YellowProperty">
+                            <p></p>
+                        </div>
+                        <div class="Cell Square">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="Row">
+                        <div class="Cell SquareBottom">
+                            <p>Free Parking</p>
+                        </div>
+                        <div class="Cell">
+                            <p>Red Space</p>
+                        </div>
+                        <div class="Cell">
+                            <p>Chance</p>
+                        </div>
+                        <div class="Cell">
+                            <p>Red Space</p>
+                        </div>
+                        <div class="Cell">
+                            <p>Red Space</p>
+                        </div>
+                        <div class="Cell">
+                            <p>Train</p>
+                        </div>
+                        <div class="Cell">
+                            <p>Yellow Space</p>
+                        </div>
+                        <div class="Cell">
+                            <p>Yellow Space</p>
+                        </div>
+                        <div class="Cell">
+                            <p>Water</p>
+                        </div>
+                        <div class="Cell">
+                            <p>Yellow Space</p>
+                        </div>
+                        <div class="Cell SquareBottom">
+                            <p>Jail</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            )
-            }
+
+        );
+    }
 }
