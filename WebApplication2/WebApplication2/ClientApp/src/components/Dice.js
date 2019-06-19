@@ -14,7 +14,7 @@ export class Dice extends React.Component {
             players: [
                 {
                     money: 0,
-                    position: 0,
+                    position: 5,
                     properties: [
                         {
                             name: 'New York Avenue',
@@ -33,7 +33,7 @@ export class Dice extends React.Component {
                 },
                 {
                     money: 0,
-                    position: 1,
+                    position: 7,
                     properties: [
                         {
                             name: 'New York Avenue',
@@ -218,6 +218,19 @@ export class Dice extends React.Component {
                         </div>
                         <div class="Cell SquareBottom HeaderSquare">
                             <p>Jail</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="Table TableLeftSide">
+                    <div class="Heading">
+                        <div class="Cell">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="Row">
+                        <div class="Cell">
+                            <p>Orange Square</p>
                         </div>
                     </div>
                 </div>

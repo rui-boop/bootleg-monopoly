@@ -37,7 +37,6 @@
     width: 60px;
     height: 20px;
     display: table-row;
-    font-weight: bold;
     text-align: center;
 }
 
@@ -67,6 +66,7 @@
 
 .Train {
     background-color: black;
+    color: white;
 }
 
 .WaterElectric {
@@ -83,4 +83,10 @@
 
 .HeaderSquare {
     width: 100px;
+}
+
+.TableLeftSide {
+   transform: rotate(90deg) ;
+   margin-top: -20px;
+   margin-left: 20px;
 }
