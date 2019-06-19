@@ -30,6 +30,25 @@ export class Dice extends React.Component {
                     ],
                     name: 'John',
                     figure: 'puppy',
+                },
+                {
+                    money: 0,
+                    position: 1,
+                    properties: [
+                        {
+                            name: 'New York Avenue',
+                            price: 400,
+                            rent: 20,
+                            mortgage: 200,
+                            color: 'red',
+                            houses: 0,
+                            hotels: 0,
+                            isMatch: false
+
+                        }
+                    ],
+                    name: 'Jane',
+                    figure: 'puppy',
                 }
             ],
             turn: 0,
@@ -94,37 +113,76 @@ export class Dice extends React.Component {
                     </div>
                     <div class="Heading">
                         <div class="Cell Square HeaderSquare">
-                            <p></p>
+                            <p>
+                                {(this.state.players[0].position == 0) ? "(P1)" : ""}
+                                {(this.state.players[1].position == 0) ? "(P2)" : ""}
+                            </p>
                         </div>
                         <div class="Cell RedProperty">
-                            <p></p>
+                        <p>
+                            {(this.state.players[0].position == 1) ? "(P1)" : ""}
+                            {(this.state.players[1].position == 1) ? "(P2)" : ""}
+                        </p>
                         </div>
                         <div class="Cell">
-                            <p></p>
+                            <p>
+                            {(this.state.players[0].position == 2) ? "(P1)" : ""}
+                        {(this.state.players[1].position == 2) ? "(P2)" : ""}
+                        </p>
                         </div>
                         <div class="Cell RedProperty">
-                            <p></p>
+                                <p>
+                                {(this.state.players[0].position == 3) ? "(P1)" : ""}
+                            {(this.state.players[1].position == 3) ? "(P2)" : ""}
+                            </p>
                         </div>
                         <div class="Cell RedProperty">
-                            <p></p>
+                                <p>
+                                {(this.state.players[0].position == 4) ? "(P1)" : ""}
+                            {(this.state.players[1].position == 4) ? "(P2)" : ""}
+                            </p>
                         </div>
                         <div class="Cell Train">
-                            <p></p>
+                                <p>
+                                {(this.state.players[0].position == 5) ? "(P1)" : ""}
+                            {(this.state.players[1].position == 5) ? "(P2)" : ""}
+                            </p>
+
                         </div>
                         <div class="Cell YellowProperty">
-                            <p></p>
+                                <p>
+                                {(this.state.players[0].position == 6) ? "(P1)" : ""}
+                            {(this.state.players[1].position == 6) ? "(P2)" : ""}
+                            </p>
+
                         </div>
                         <div class="Cell YellowProperty">
-                            <p></p>
+                            <p>
+                            {(this.state.players[0].position == 7) ? "(P1)" : ""}
+                        {(this.state.players[1].position == 7) ? "(P2)" : ""}
+                        </p>
+
                         </div>
                         <div class="Cell WaterElectric">
-                            <p></p>
+                            <p>
+                            {(this.state.players[0].position == 8) ? "(P1)" : ""}
+                        {(this.state.players[1].position == 8) ? "(P2)" : ""}
+                        </p>
+
                         </div>
                         <div class="Cell YellowProperty">
-                            <p></p>
+                                <p>
+                                {(this.state.players[0].position == 9) ? "(P1)" : ""}
+                            {(this.state.players[1].position == 9) ? "(P2)" : ""}
+                            </p>
+
                         </div>
                         <div class="Cell Square HeaderSquare">
-                            <p></p>
+                                <p>
+                                {(this.state.players[0].position == 10) ? "(P1)" : ""}
+                            {(this.state.players[1].position == 10) ? "(P2)" : ""}
+                            </p>
+
                         </div>
                     </div>
                     <div class="Row">
