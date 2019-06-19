@@ -123,12 +123,12 @@ export class Dice extends React.Component {
                         <div class="Cell YellowProperty">
                             <p></p>
                         </div>
-                        <div class="Cell Square">
+                        <div class="Cell Square HeaderSquare">
                             <p></p>
                         </div>
                     </div>
                     <div class="Row">
-                        <div class="Cell SquareBottom">
+                        <div class="Cell SquareBottom HeaderSquare">
                             <p>Free Parking</p>
                         </div>
                         <div class="Cell">
@@ -158,7 +158,7 @@ export class Dice extends React.Component {
                         <div class="Cell">
                             <p>Yellow Space</p>
                         </div>
-                        <div class="Cell SquareBottom">
+                        <div class="Cell SquareBottom HeaderSquare">
                             <p>Jail</p>
                         </div>
                     </div>
