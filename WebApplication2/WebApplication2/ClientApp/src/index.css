@@ -1,0 +1,23 @@
+
+
+.font {
+    font-size: 20px;
+    width: 80px;
+    height: 80px;
+    font-family: 'Comic Sans MS';
+}
+
+.display {
+    text-align: right;
+    font-size: 30px;
+    font-family: 'Comic Sans MS';
+}
+
+.numberpad {
+    text-align: right;
+    font-family: 'Comic Sans MS';
+}
+
+.numberdisplay {
+    font-family: 'Times New Roman';
+}
