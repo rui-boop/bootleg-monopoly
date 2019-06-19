@@ -79,15 +79,22 @@ export class Dice extends React.Component {
         this.setState({ dice2: rand2 });
         this.setState({ result: rand + rand2 });
         this.setState({ isDouble: rand == rand2 ? 'Doubles!' : 'Next' });
+        var newPosition = this.state.players[this.state.turn].position + rand + rand2;
+
+        if (newPosition > 10) {
+            newPosition = newPosition % 10;
+        }
+        this.state.players[this.state.turn].position = newPosition;
+        
     }
 
     endTurn() {
-        var numberOfCells
+        var numberOfCells;
         if (this.state.position > numberOfCells) {
             this.state.players.money = this.state.players.money + 200;
             this.state.position = this.state.position - numberOfCells;
         }
-        if (this.state.turn > this.state.players - 1) {
+        if (this.state.turn >= this.state.players.length - 1) {
             this.setState({ turn: 0 })
         } else {
             this.setState({ turn: this.state.turn + 1 })
@@ -102,7 +109,7 @@ export class Dice extends React.Component {
                 <div> {this.state.isDouble} </div>
                 <button onClick={this.endTurn.bind(this)}>End Turn</button>
                 <div> Money: ${this.state.players.money} </div>
-                <div> Position: {this.state.players.position} </div>
+                <div> Position Player 1: {this.state.players[0].position} / Position Player 2: {this.state.players[1].position} </div>
                 <div> turn: {this.state.turn} </div>
                 <div>
                     <i class="fas fa-dog"></i>
