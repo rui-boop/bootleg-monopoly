@@ -354,17 +354,17 @@ export class Dice extends React.Component {
         this.setState({ isDouble: rand == rand2 ? 'Doubles!' : 'Next' });
         var newPosition = this.state.players[this.state.turn].position + rand + rand2;
 
-        if (newPosition > 10) {
-            newPosition = newPosition % 10;
+        if (newPosition >= 40) {
+            newPosition = newPosition % 40;
         }
         this.state.players[this.state.turn].position = newPosition;
         
     }
 
     endTurn() {
-        if (this.state.position > 10) {
+        if (this.state.position >= 40) {
             this.state.players[this.state.turn].money = this.state.players[this.state.turn].money + 200;
-            this.state.position = this.state.position % 10;
+            this.state.position = this.state.position % 40;
         }
         if (this.state.turn >= this.state.players.length - 1) {
             this.setState({ turn: 0 })
@@ -393,73 +393,73 @@ export class Dice extends React.Component {
                     <div class="Heading">
                         <div class="Cell Square HeaderSquare">
                             <p>
-                                {(this.state.players[0].position == 0) ? "(P1)" : ""}
-                                {(this.state.players[1].position == 0) ? "(P2)" : ""}
+                                {(this.state.players[0].position == 20) ? "(P1)" : ""}
+                                {(this.state.players[1].position == 20) ? "(P2)" : ""}
                             </p>
                         </div>
                         <div class="Cell RedProperty EveryFont">
                         <p>
-                            {(this.state.players[0].position == 1) ? "(P1)" : ""}
-                            {(this.state.players[1].position == 1) ? "(P2)" : ""}
+                            {(this.state.players[0].position == 21) ? "(P1)" : ""}
+                            {(this.state.players[1].position == 21) ? "(P2)" : ""}
                         </p>
                         </div>
                         <div class="Cell EveryFont">
                             <p>
-                            {(this.state.players[0].position == 2) ? "(P1)" : ""}
-                        {(this.state.players[1].position == 2) ? "(P2)" : ""}
+                            {(this.state.players[0].position == 22) ? "(P1)" : ""}
+                        {(this.state.players[1].position == 22) ? "(P2)" : ""}
                         </p>
                         </div>
                         <div class="Cell RedProperty EveryFont">
                                 <p>
-                                {(this.state.players[0].position == 3) ? "(P1)" : ""}
-                            {(this.state.players[1].position == 3) ? "(P2)" : ""}
+                                {(this.state.players[0].position == 23) ? "(P1)" : ""}
+                            {(this.state.players[1].position == 23) ? "(P2)" : ""}
                             </p>
                         </div>
                         <div class="Cell RedProperty EveryFont">
                                 <p>
-                                {(this.state.players[0].position == 4) ? "(P1)" : ""}
-                            {(this.state.players[1].position == 4) ? "(P2)" : ""}
+                                {(this.state.players[0].position == 24) ? "(P1)" : ""}
+                            {(this.state.players[1].position == 24) ? "(P2)" : ""}
                             </p>
                         </div>
                         <div class="Cell Train EveryFont">
                                 <p>
-                                {(this.state.players[0].position == 5) ? "(P1)" : ""}
-                            {(this.state.players[1].position == 5) ? "(P2)" : ""}
+                                {(this.state.players[0].position == 25) ? "(P1)" : ""}
+                            {(this.state.players[1].position == 25) ? "(P2)" : ""}
                             </p>
 
                         </div>
                         <div class="Cell YellowProperty EveryFont">
                                 <p>
-                                {(this.state.players[0].position == 6) ? "(P1)" : ""}
-                            {(this.state.players[1].position == 6) ? "(P2)" : ""}
+                                {(this.state.players[0].position == 26) ? "(P1)" : ""}
+                            {(this.state.players[1].position == 26) ? "(P2)" : ""}
                             </p>
 
                         </div>
                         <div class="Cell YellowProperty EveryFont">
                             <p>
-                            {(this.state.players[0].position == 7) ? "(P1)" : ""}
-                        {(this.state.players[1].position == 7) ? "(P2)" : ""}
+                            {(this.state.players[0].position == 27) ? "(P1)" : ""}
+                        {(this.state.players[1].position == 27) ? "(P2)" : ""}
                         </p>
 
                         </div>
                         <div class="Cell WaterElectric EveryFont">
                             <p>
-                            {(this.state.players[0].position == 8) ? "(P1)" : ""}
-                        {(this.state.players[1].position == 8) ? "(P2)" : ""}
+                            {(this.state.players[0].position == 28) ? "(P1)" : ""}
+                        {(this.state.players[1].position == 28) ? "(P2)" : ""}
                         </p>
 
                         </div>
                         <div class="Cell YellowProperty EveryFont">
                                 <p>
-                                {(this.state.players[0].position == 9) ? "(P1)" : ""}
-                            {(this.state.players[1].position == 9) ? "(P2)" : ""}
+                                {(this.state.players[0].position == 29) ? "(P1)" : ""}
+                            {(this.state.players[1].position == 29) ? "(P2)" : ""}
                             </p>
 
                         </div>
                         <div class="Cell Square HeaderSquare">
                                 <p>
-                                {(this.state.players[0].position == 10) ? "(P1)" : ""}
-                            {(this.state.players[1].position == 10) ? "(P2)" : ""}
+                                {(this.state.players[0].position == 30) ? "(P1)" : ""}
+                            {(this.state.players[1].position == 30) ? "(P2)" : ""}
                             </p>
 
                         </div>
@@ -469,39 +469,39 @@ export class Dice extends React.Component {
                             <p>FREE PARKING</p>
                         </div>
                         <div class="Cell EveryFont">
-                            <p>Kentucky Avenue</p>
-                            <p>Price: ${this.state.bank.property[0].price}</p>
+                            <p>{this.state.bank.property[14].name}</p>
+                            <p>Price: ${this.state.bank.property[14].price}</p>
                         </div>
                         <div class="Cell EveryFont">
                             <p>Chance</p>
                         </div>
                         <div class="Cell">
-                            <p>Indiana Avenue</p>
-                            <p>Price: ${this.state.bank.property[0].price}</p>
+                            <p>{this.state.bank.property[15].name}</p>
+                            <p>Price: ${this.state.bank.property[15].price}</p>
                         </div>
                         <div class="Cell">
-                            <p>Illinois Avenue</p>
-                            <p>Price: ${this.state.bank.property[0].price}</p>
+                            <p>{this.state.bank.property[16].name}</p>
+                            <p>Price: ${this.state.bank.property[16].price}</p>
                         </div>
                         <div class="Cell">
-                            <p>B&O Railroad</p>
-                            <p>Price: ${this.state.bank.property[0].price}</p>
+                            <p>{this.state.bank.property[17].name}</p>
+                            <p>Price: ${this.state.bank.property[17].price}</p>
                         </div>
                         <div class="Cell">
-                            <p>Atlantic Avenue</p>
-                            <p>Price: ${this.state.bank.property[0].price}</p>
+                            <p>{this.state.bank.property[18].name}</p>
+                            <p>Price: ${this.state.bank.property[18].price}</p>
                         </div>
                         <div class="Cell">
-                            <p>Ventnor Avenue</p>
-                            <p>Price: ${this.state.bank.property[0].price}</p>
+                            <p>{this.state.bank.property[19].name}</p>
+                            <p>Price: ${this.state.bank.property[19].price}</p>
                         </div>
                         <div class="Cell">
-                            <p>Water Works</p>
-                            <p>Price: ${this.state.bank.property[0].price}</p>
+                            <p>{this.state.bank.property[20].name}</p>
+                            <p>Price: ${this.state.bank.property[20].price}</p>
                         </div>
                         <div class="Cell">
-                            <p>Marvin Gardens</p>
-                            <p>Price: ${this.state.bank.property[0].price}</p>
+                            <p>{this.state.bank.property[21].name}</p>
+                            <p>Price: ${this.state.bank.property[21].price}</p>
                         </div>
                         <div class="Cell SquareBottom HeaderSquare">
                             <p>GO TO JAIL</p>
@@ -512,157 +512,200 @@ export class Dice extends React.Component {
                 <div class="Table TableLeftSide">
                     <div class="Heading">
                         <div class="Cell OrangeProperty EveryFont">
-                            <p></p>
+                            <p>{(this.state.players[0].position == 19) ? "(P1)" : ""}
+                                {(this.state.players[1].position == 19) ? "(P2)" : ""}</p>
                         </div>
                         <div class="Cell OrangeProperty EveryFont">
-                            <p></p>
+                            <p>{(this.state.players[0].position == 18) ? "(P1)" : ""}
+                                {(this.state.players[1].position == 18) ? "(P2)" : ""}</p>
                         </div>
                         <div class="Cell EveryFont">
-                            <p></p>
+                            <p>{(this.state.players[0].position == 17) ? "(P1)" : ""}
+                                {(this.state.players[1].position == 17) ? "(P2)" : ""}</p>
                         </div>
                         <div class="Cell OrangeProperty EveryFont">
-                            <p></p>
+                            <p>{(this.state.players[0].position == 16) ? "(P1)" : ""}
+                                {(this.state.players[1].position == 16) ? "(P2)" : ""}</p>
                         </div>
                         <div class="Cell Train EveryFont">
-                            <p></p>
+                            <p>{(this.state.players[0].position == 15) ? "(P1)" : ""}
+                                {(this.state.players[1].position == 15) ? "(P2)" : ""}</p>
                         </div>
                         <div class="Cell PinkProperty EveryFont">
-                            <p></p>
+                            <p>{(this.state.players[0].position == 14) ? "(P1)" : ""}
+                                {(this.state.players[1].position == 14) ? "(P2)" : ""}</p>
                         </div>
                         <div class="Cell PinkProperty EveryFont">
-                            <p></p>
+                            <p>{(this.state.players[0].position == 13) ? "(P1)" : ""}
+                                {(this.state.players[1].position == 13) ? "(P2)" : ""}</p>
                         </div>
                         <div class="Cell WaterElectric EveryFont">
-                            <p></p>
+                            <p>{(this.state.players[0].position == 12) ? "(P1)" : ""}
+                                {(this.state.players[1].position == 12) ? "(P2)" : ""}</p>
                         </div>
                         <div class="Cell PinkProperty EveryFont">
-                            <p></p>
+                            <p>{(this.state.players[0].position == 11) ? "(P1)" : ""}
+                                {(this.state.players[1].position == 11) ? "(P2)" : ""}</p>
                         </div>
                     </div>
                     <div class="Row">
                         <div class="Cell">
-                            <p>NY Avenue</p>
+                            <p>{this.state.bank.property[13].name}</p>
+                            <p>Price: ${this.state.bank.property[13].price}</p>
                         </div>
                         <div class="Cell EveryFont">
-                            <p>Orange Square</p>
+                            <p>{this.state.bank.property[12].name}</p>
+                            <p>Price: ${this.state.bank.property[12].price}</p>
                         </div>
                         <div class="Cell EveryFont">
                             <p>Chest</p>
                         </div>
                         <div class="Cell EveryFont">
-                            <p>Orange Square</p>
+                            <p>{this.state.bank.property[11].name}</p>
+                            <p>Price: ${this.state.bank.property[11].price}</p>
                         </div>
                         <div class="Cell EveryFont">
-                            <p>Train</p>
+                            <p>{this.state.bank.property[10].name}</p>
+                            <p>Price: ${this.state.bank.property[10].price}</p>
                         </div>
                         <div class="Cell EveryFont">
-                            <p>Pink Square</p>
+                            <p>{this.state.bank.property[9].name}</p>
+                            <p>Price: ${this.state.bank.property[9].price}</p>
                         </div>
                         <div class="Cell EveryFont">
-                            <p>Pink Square</p>
+                            <p>{this.state.bank.property[8].name}</p>
+                            <p>Price: ${this.state.bank.property[8].price}</p>
                         </div>
                         <div class="Cell EveryFont">
-                            <p>Electric</p>
+                            <p>{this.state.bank.property[7].name}</p>
+                            <p>Price: ${this.state.bank.property[7].price}</p>
                         </div>
                         <div class="Cell EveryFont">
-                            <p>Pink Square</p>
+                            <p>{this.state.bank.property[6].name}</p>
+                            <p>Price: ${this.state.bank.property[6].price}</p>
                         </div>
                     </div>
                 </div>
                 <div class="Table TableRightSide">
                     <div class="Heading">
                         <div class="Cell BlueProperty EveryFont">
-                            <p></p>
+                            <p>{(this.state.players[0].position == 39) ? "(P1)" : ""}
+                                {(this.state.players[1].position == 39) ? "(P2)" : ""}</p>
                         </div>
                         <div class="Cell EveryFont">
-                            <p></p>
+                            <p>{(this.state.players[0].position == 38) ? "(P1)" : ""}
+                                {(this.state.players[1].position == 38) ? "(P2)" : ""}</p>
                         </div>
                         <div class="Cell BlueProperty EveryFont">
-                            <p></p>
+                            <p>{(this.state.players[0].position == 37) ? "(P1)" : ""}
+                                {(this.state.players[1].position == 37) ? "(P2)" : ""}</p>
                         </div>
                         <div class="Cell EveryFont">
-                            <p></p>
+                            <p>{(this.state.players[0].position == 36) ? "(P1)" : ""}
+                                {(this.state.players[1].position == 36) ? "(P2)" : ""}</p>
                         </div>
                         <div class="Cell Train EveryFont">
-                            <p></p>
+                            <p>{(this.state.players[0].position == 35) ? "(P1)" : ""}
+                                {(this.state.players[1].position == 35) ? "(P2)" : ""}</p>
                         </div>
                         <div class="Cell GreenProperty EveryFont">
-                            <p></p>
+                            <p>{(this.state.players[0].position == 34) ? "(P1)" : ""}
+                                {(this.state.players[1].position == 34) ? "(P2)" : ""}</p>
                         </div>
                         <div class="Cell EveryFont">
-                            <p></p>
+                            <p>{(this.state.players[0].position == 33) ? "(P1)" : ""}
+                                {(this.state.players[1].position == 33) ? "(P2)" : ""}</p>
                         </div>
                         <div class="Cell GreenProperty EveryFont">
-                            <p></p>
+                            <p>{(this.state.players[0].position == 32) ? "(P1)" : ""}
+                                {(this.state.players[1].position == 32) ? "(P2)" : ""}</p>
                         </div>
                         <div class="Cell GreenProperty EveryFont">
-                            <p></p>
+                            <p>{(this.state.players[0].position == 31) ? "(P1)" : ""}
+                                {(this.state.players[1].position == 31) ? "(P2)" : ""}</p>
                         </div>
                     </div>
                     <div class="Row">
                         <div class="Cell EveryFont">
-                            <p>Blue Square</p>
+                            <p>{this.state.bank.property[27].name}</p>
+                            <p>Price: ${this.state.bank.property[27].price}</p>
                         </div>
                         <div class="Cell EveryFont">
                             <p>Luxury Tax</p>
                         </div>
                         <div class="Cell EveryFont">
-                            <p>Blue Square</p>
+                            <p>{this.state.bank.property[26].name}</p>
+                            <p>Price: ${this.state.bank.property[26].price}</p>
                         </div>
                         <div class="Cell EveryFont">
                             <p>Chance</p>
                         </div>
                         <div class="Cell EveryFont">
-                            <p>Train</p>
+                            <p>{this.state.bank.property[25].name}</p>
+                            <p>Price: ${this.state.bank.property[25].price}</p>
                         </div>
                         <div class="Cell EveryFont">
-                            <p>Green Square</p>
+                            <p>{this.state.bank.property[24].name}</p>
+                            <p>Price: ${this.state.bank.property[24].price}</p>
                         </div>
                         <div class="Cell EveryFont">
                             <p>Chest</p>
                         </div>
                         <div class="Cell EveryFont">
-                            <p>Green Square</p>
+                            <p>{this.state.bank.property[23].name}</p>
+                            <p>Price: ${this.state.bank.property[23].price}</p>
                         </div>
                         <div class="Cell EveryFont">
-                            <p>Green Square</p>
+                            <p>{this.state.bank.property[22].name}</p>
+                            <p>Price: ${this.state.bank.property[22].price}</p>
                         </div>
                     </div>
                 </div>
                 <div class="Table TableBottom">
                     <div class="Heading">
                         <div class="Cell Square HeaderSquare">
-                            <p></p>
+                            <p>{(this.state.players[0].position == 10) ? "(P1)" : ""}
+                                {(this.state.players[1].position == 10) ? "(P2)" : ""}</p>
                         </div>
                         <div class="Cell LightBlueProperty EveryFont">
-                            <p></p>
+                            <p>{(this.state.players[0].position == 9) ? "(P1)" : ""}
+                                {(this.state.players[1].position == 9) ? "(P2)" : ""}</p>
                         </div>
                         <div class="Cell LightBlueProperty EveryFont">
-                            <p></p>
+                            <p>{(this.state.players[0].position == 8) ? "(P1)" : ""}
+                                {(this.state.players[1].position == 8) ? "(P2)" : ""}</p>
                         </div>
                         <div class="Cell EveryFont">
-                            <p></p>
+                            <p>{(this.state.players[0].position == 7) ? "(P1)" : ""}
+                                {(this.state.players[1].position == 7) ? "(P2)" : ""}</p>
                         </div>
                         <div class="Cell LightBlueProperty EveryFont">
-                            <p></p>
+                            <p>{(this.state.players[0].position == 6) ? "(P1)" : ""}
+                                {(this.state.players[1].position == 6) ? "(P2)" : ""}</p>
                         </div>
                         <div class="Cell Train EveryFont">
-                            <p></p>
+                            <p>{(this.state.players[0].position == 5) ? "(P1)" : ""}
+                                {(this.state.players[1].position == 5) ? "(P2)" : ""}</p>
                         </div>
                         <div class="Cell EveryFont">
-                            <p></p>
+                            <p>{(this.state.players[0].position == 4) ? "(P1)" : ""}
+                                {(this.state.players[1].position == 4) ? "(P2)" : ""}</p>
                         </div>
                         <div class="Cell BrownProperty EveryFont">
-                            <p></p>
+                            <p>{(this.state.players[0].position == 3) ? "(P1)" : ""}
+                                {(this.state.players[1].position == 3) ? "(P2)" : ""}</p>
                         </div>
                         <div class="Cell EveryFont">
-                            <p></p>
+                            <p>{(this.state.players[0].position == 2) ? "(P1)" : ""}
+                                {(this.state.players[1].position == 2) ? "(P2)" : ""}</p>
                         </div>
                         <div class="Cell BrownProperty EveryFont">
-                            <p></p>
+                            <p>{(this.state.players[0].position == 1) ? "(P1)" : ""}
+                                {(this.state.players[1].position == 1) ? "(P2)" : ""}</p>
                         </div>
                         <div class="Cell Square HeaderSquare">
-                            <p></p>
+                            <p>{(this.state.players[0].position == 0) ? "(P1)" : ""}
+                                {(this.state.players[1].position == 0) ? "(P2)" : ""}</p>
                         </div>
                     </div>
                     <div class="Row">
@@ -670,31 +713,36 @@ export class Dice extends React.Component {
                             <p>JAIL, JUST VISITING</p>
                         </div>
                         <div class="Cell EveryFont">
-                            <p>LightBlue Square</p>
+                            <p>{this.state.bank.property[5].name}</p>
+                            <p>Price: ${this.state.bank.property[5].price}</p>
                         </div>
                         <div class="Cell EveryFont">
-                            <p>LightBlue Square</p>
+                            <p>{this.state.bank.property[4].name}</p>
+                            <p>Price: ${this.state.bank.property[4].price}</p>
                         </div>
                         <div class="Cell EveryFont">
                             <p>Chance</p>
                         </div>
                         <div class="Cell EveryFont">
-                            <p>LightBlue Square</p>
+                            <p>{this.state.bank.property[3].name}</p>
+                            <p>Price: ${this.state.bank.property[3].price}</p>
                         </div>
                         <div class="Cell EveryFont">
-                            <p>Train</p>
+                            <p>{this.state.bank.property[2].name}</p>
+                            <p>Price: ${this.state.bank.property[2].price}</p>
                         </div>
                         <div class="Cell EveryFont">
                             <p>Income Tax</p>
                         </div>
                         <div class="Cell EveryFont">
-                            <p>Brown Square</p>
+                            <p>{this.state.bank.property[1].name}</p>
+                            <p>Price: ${this.state.bank.property[1].price}</p>
                         </div>
                         <div class="Cell EveryFont">
                             <p>Chest</p>
                         </div>
                         <div class="Cell EveryFont">
-                            <p>Brown Square</p>
+                            <p>{this.state.bank.property[0].name}</p>
                         </div>
                         <div class="Cell SquareBottom HeaderSquare">
                             <p>GO</p>
