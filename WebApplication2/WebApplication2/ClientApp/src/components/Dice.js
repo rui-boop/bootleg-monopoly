@@ -475,31 +475,31 @@ export class Dice extends React.Component {
                         <div class="Cell EveryFont">
                             <p>Chance</p>
                         </div>
-                        <div class="Cell">
+                        <div class="Cell EveryFont">
                             <p>{this.state.bank.property[15].name}</p>
                             <p>Price: ${this.state.bank.property[15].price}</p>
                         </div>
-                        <div class="Cell">
+                        <div class="Cell EveryFont">
                             <p>{this.state.bank.property[16].name}</p>
                             <p>Price: ${this.state.bank.property[16].price}</p>
                         </div>
-                        <div class="Cell">
+                        <div class="Cell EveryFont">
                             <p>{this.state.bank.property[17].name}</p>
                             <p>Price: ${this.state.bank.property[17].price}</p>
                         </div>
-                        <div class="Cell">
+                        <div class="Cell EveryFont">
                             <p>{this.state.bank.property[18].name}</p>
                             <p>Price: ${this.state.bank.property[18].price}</p>
                         </div>
-                        <div class="Cell">
+                        <div class="Cell EveryFont">
                             <p>{this.state.bank.property[19].name}</p>
                             <p>Price: ${this.state.bank.property[19].price}</p>
                         </div>
-                        <div class="Cell">
+                        <div class="Cell EveryFont">
                             <p>{this.state.bank.property[20].name}</p>
                             <p>Price: ${this.state.bank.property[20].price}</p>
                         </div>
-                        <div class="Cell">
+                        <div class="Cell EveryFont">
                             <p>{this.state.bank.property[21].name}</p>
                             <p>Price: ${this.state.bank.property[21].price}</p>
                         </div>
@@ -549,7 +549,7 @@ export class Dice extends React.Component {
                         </div>
                     </div>
                     <div class="Row">
-                        <div class="Cell">
+                        <div class="Cell EveryFont">
                             <p>{this.state.bank.property[13].name}</p>
                             <p>Price: ${this.state.bank.property[13].price}</p>
                         </div>
