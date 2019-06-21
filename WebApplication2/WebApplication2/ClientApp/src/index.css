@@ -126,3 +126,15 @@
 .EveryFont {
     font-size: 8px;
 }
+
+.PaddingButton {
+    transform: translate(25%, 2000%);
+}
+
+.TranslateButton {
+    transform: translate(220%, 1530%);
+}
+
+.EndTurn {
+    transform: translate(313%, 1530%);
+}

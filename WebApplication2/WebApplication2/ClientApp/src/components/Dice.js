@@ -376,13 +376,13 @@ export class Dice extends React.Component {
     render() {
         return (
             <div>
-                <div className='numberdisplay'>{this.state.result}</div>
-                <button onClick={this.randomNumber.bind(this)}>Roll The Dice!</button>
-                <div> {this.state.isDouble} </div>
-                <button onClick={this.endTurn.bind(this)}>End Turn</button>
-                <div> Player 1 Money: ${this.state.players[0].money} / Player 2 Money: ${this.state.players[1].money} </div>
-                <div> Position Player 1: {this.state.players[0].position} / Position Player 2: {this.state.players[1].position} </div>
-                <div> turn: {this.state.turn} </div>
+                <div className='numberdisplay PaddingButton'>{this.state.result}</div>
+                <button className='PaddingButton TranslateButton' onClick={this.randomNumber.bind(this)}>Roll The Dice!</button>
+                <div className='PaddingButton'> {this.state.isDouble} </div>
+                <button className='PaddingButton TranslateButton EndTurn' onClick={this.endTurn.bind(this)}>End Turn</button>
+                <div className='PaddingButton'> Player 1 Money: ${this.state.players[0].money} / Player 2 Money: ${this.state.players[1].money} </div>
+                <div className='PaddingButton'> Position Player 1: {this.state.players[0].position} / Position Player 2: {this.state.players[1].position} </div>
+                <div className='PaddingButton'> turn: {this.state.turn} </div>
                 <div>
                     <i class="fas fa-dog"></i>
                 </div>
