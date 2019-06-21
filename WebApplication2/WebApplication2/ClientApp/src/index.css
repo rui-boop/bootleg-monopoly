@@ -35,7 +35,7 @@
 
 .Heading {
     width: 60px;
-    height: 20px;
+    height: 40px;
     display: table-row;
     text-align: center;
 }
@@ -82,11 +82,47 @@
 }
 
 .HeaderSquare {
-    width: 100px;
+    width: 120px;
 }
 
 .TableLeftSide {
-   transform: rotate(90deg) ;
-   margin-top: -20px;
-   margin-left: 20px;
+   transform: rotate(90deg);
+   margin-top: 210px;
+   margin-left: -210px;
+}
+
+.TableRightSide {
+    transform: rotate(-90deg) translateX(22.2%) translateY(375%);
+}
+
+.TableBottom {
+    transform: translateY(75%);
+}
+
+.OrangeProperty {
+    background-color: darkorange;
+}
+
+.PinkProperty {
+    background-color: deeppink;
+}
+
+.BlueProperty {
+    background-color: dodgerblue;
+}
+
+.GreenProperty {
+    background-color: forestgreen;
+}
+
+.BrownProperty {
+    background-color: saddlebrown;
+}
+
+.LightBlueProperty {
+    background-color: lightblue;
+}
+
+.EveryFont {
+    font-size: 9px;
 }

@@ -125,59 +125,59 @@ export class Dice extends React.Component {
                                 {(this.state.players[1].position == 0) ? "(P2)" : ""}
                             </p>
                         </div>
-                        <div class="Cell RedProperty">
+                        <div class="Cell RedProperty EveryFont">
                         <p>
                             {(this.state.players[0].position == 1) ? "(P1)" : ""}
                             {(this.state.players[1].position == 1) ? "(P2)" : ""}
                         </p>
                         </div>
-                        <div class="Cell">
+                        <div class="Cell EveryFont">
                             <p>
                             {(this.state.players[0].position == 2) ? "(P1)" : ""}
                         {(this.state.players[1].position == 2) ? "(P2)" : ""}
                         </p>
                         </div>
-                        <div class="Cell RedProperty">
+                        <div class="Cell RedProperty EveryFont">
                                 <p>
                                 {(this.state.players[0].position == 3) ? "(P1)" : ""}
                             {(this.state.players[1].position == 3) ? "(P2)" : ""}
                             </p>
                         </div>
-                        <div class="Cell RedProperty">
+                        <div class="Cell RedProperty EveryFont">
                                 <p>
                                 {(this.state.players[0].position == 4) ? "(P1)" : ""}
                             {(this.state.players[1].position == 4) ? "(P2)" : ""}
                             </p>
                         </div>
-                        <div class="Cell Train">
+                        <div class="Cell Train EveryFont">
                                 <p>
                                 {(this.state.players[0].position == 5) ? "(P1)" : ""}
                             {(this.state.players[1].position == 5) ? "(P2)" : ""}
                             </p>
 
                         </div>
-                        <div class="Cell YellowProperty">
+                        <div class="Cell YellowProperty EveryFont">
                                 <p>
                                 {(this.state.players[0].position == 6) ? "(P1)" : ""}
                             {(this.state.players[1].position == 6) ? "(P2)" : ""}
                             </p>
 
                         </div>
-                        <div class="Cell YellowProperty">
+                        <div class="Cell YellowProperty EveryFont">
                             <p>
                             {(this.state.players[0].position == 7) ? "(P1)" : ""}
                         {(this.state.players[1].position == 7) ? "(P2)" : ""}
                         </p>
 
                         </div>
-                        <div class="Cell WaterElectric">
+                        <div class="Cell WaterElectric EveryFont">
                             <p>
                             {(this.state.players[0].position == 8) ? "(P1)" : ""}
                         {(this.state.players[1].position == 8) ? "(P2)" : ""}
                         </p>
 
                         </div>
-                        <div class="Cell YellowProperty">
+                        <div class="Cell YellowProperty EveryFont">
                                 <p>
                                 {(this.state.players[0].position == 9) ? "(P1)" : ""}
                             {(this.state.players[1].position == 9) ? "(P2)" : ""}
@@ -194,50 +194,230 @@ export class Dice extends React.Component {
                     </div>
                     <div class="Row">
                         <div class="Cell SquareBottom HeaderSquare">
-                            <p>Free Parking</p>
+                            <p>FREE PARKING</p>
                         </div>
-                        <div class="Cell">
+                        <div class="Cell EveryFont">
                             <p>Red Space</p>
                         </div>
-                        <div class="Cell">
+                        <div class="Cell EveryFont">
                             <p>Chance</p>
                         </div>
-                        <div class="Cell">
+                        <div class="Cell EveryFont">
                             <p>Red Space</p>
                         </div>
-                        <div class="Cell">
+                        <div class="Cell EveryFont">
                             <p>Red Space</p>
                         </div>
-                        <div class="Cell">
+                        <div class="Cell EveryFont">
                             <p>Train</p>
                         </div>
-                        <div class="Cell">
+                        <div class="Cell EveryFont">
                             <p>Yellow Space</p>
                         </div>
-                        <div class="Cell">
+                        <div class="Cell EveryFont">
                             <p>Yellow Space</p>
                         </div>
-                        <div class="Cell">
+                        <div class="Cell EveryFont">
                             <p>Water</p>
                         </div>
-                        <div class="Cell">
+                        <div class="Cell EveryFont">
                             <p>Yellow Space</p>
                         </div>
                         <div class="Cell SquareBottom HeaderSquare">
-                            <p>Jail</p>
+                            <p>GO TO JAIL</p>
                         </div>
                     </div>
 
                 </div>
                 <div class="Table TableLeftSide">
                     <div class="Heading">
-                        <div class="Cell">
+                        <div class="Cell OrangeProperty EveryFont">
+                            <p></p>
+                        </div>
+                        <div class="Cell OrangeProperty EveryFont">
+                            <p></p>
+                        </div>
+                        <div class="Cell EveryFont">
+                            <p></p>
+                        </div>
+                        <div class="Cell OrangeProperty EveryFont">
+                            <p></p>
+                        </div>
+                        <div class="Cell Train EveryFont">
+                            <p></p>
+                        </div>
+                        <div class="Cell PinkProperty EveryFont">
+                            <p></p>
+                        </div>
+                        <div class="Cell PinkProperty EveryFont">
+                            <p></p>
+                        </div>
+                        <div class="Cell WaterElectric EveryFont">
+                            <p></p>
+                        </div>
+                        <div class="Cell PinkProperty EveryFont">
                             <p></p>
                         </div>
                     </div>
                     <div class="Row">
-                        <div class="Cell">
+                        <div class="Cell EveryFont">
                             <p>Orange Square</p>
+                        </div>
+                        <div class="Cell EveryFont">
+                            <p>Orange Square</p>
+                        </div>
+                        <div class="Cell EveryFont">
+                            <p>Chest</p>
+                        </div>
+                        <div class="Cell EveryFont">
+                            <p>Orange Square</p>
+                        </div>
+                        <div class="Cell EveryFont">
+                            <p>Train</p>
+                        </div>
+                        <div class="Cell EveryFont">
+                            <p>Pink Square</p>
+                        </div>
+                        <div class="Cell EveryFont">
+                            <p>Pink Square</p>
+                        </div>
+                        <div class="Cell EveryFont">
+                            <p>Electric</p>
+                        </div>
+                        <div class="Cell EveryFont">
+                            <p>Pink Square</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Table TableRightSide">
+                    <div class="Heading">
+                        <div class="Cell BlueProperty EveryFont">
+                            <p></p>
+                        </div>
+                        <div class="Cell EveryFont">
+                            <p></p>
+                        </div>
+                        <div class="Cell BlueProperty EveryFont">
+                            <p></p>
+                        </div>
+                        <div class="Cell EveryFont">
+                            <p></p>
+                        </div>
+                        <div class="Cell Train EveryFont">
+                            <p></p>
+                        </div>
+                        <div class="Cell GreenProperty EveryFont">
+                            <p></p>
+                        </div>
+                        <div class="Cell EveryFont">
+                            <p></p>
+                        </div>
+                        <div class="Cell GreenProperty EveryFont">
+                            <p></p>
+                        </div>
+                        <div class="Cell GreenProperty EveryFont">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="Row">
+                        <div class="Cell EveryFont">
+                            <p>Blue Square</p>
+                        </div>
+                        <div class="Cell EveryFont">
+                            <p>Luxury Tax</p>
+                        </div>
+                        <div class="Cell EveryFont">
+                            <p>Blue Square</p>
+                        </div>
+                        <div class="Cell EveryFont">
+                            <p>Chance</p>
+                        </div>
+                        <div class="Cell EveryFont">
+                            <p>Train</p>
+                        </div>
+                        <div class="Cell EveryFont">
+                            <p>Green Square</p>
+                        </div>
+                        <div class="Cell EveryFont">
+                            <p>Chest</p>
+                        </div>
+                        <div class="Cell EveryFont">
+                            <p>Green Square</p>
+                        </div>
+                        <div class="Cell EveryFont">
+                            <p>Green Square</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Table TableBottom">
+                    <div class="Heading">
+                        <div class="Cell Square HeaderSquare">
+                            <p></p>
+                        </div>
+                        <div class="Cell LightBlueProperty EveryFont">
+                            <p></p>
+                        </div>
+                        <div class="Cell LightBlueProperty EveryFont">
+                            <p></p>
+                        </div>
+                        <div class="Cell EveryFont">
+                            <p></p>
+                        </div>
+                        <div class="Cell LightBlueProperty EveryFont">
+                            <p></p>
+                        </div>
+                        <div class="Cell Train EveryFont">
+                            <p></p>
+                        </div>
+                        <div class="Cell EveryFont">
+                            <p></p>
+                        </div>
+                        <div class="Cell BrownProperty EveryFont">
+                            <p></p>
+                        </div>
+                        <div class="Cell EveryFont">
+                            <p></p>
+                        </div>
+                        <div class="Cell BrownProperty EveryFont">
+                            <p></p>
+                        </div>
+                        <div class="Cell Square HeaderSquare">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="Row">
+                        <div class="Cell SquareBottom HeaderSquare">
+                            <p>JAIL, JUST VISITING</p>
+                        </div>
+                        <div class="Cell EveryFont">
+                            <p>LightBlue Square</p>
+                        </div>
+                        <div class="Cell EveryFont">
+                            <p>LightBlue Square</p>
+                        </div>
+                        <div class="Cell EveryFont">
+                            <p>Chance</p>
+                        </div>
+                        <div class="Cell EveryFont">
+                            <p>LightBlue Square</p>
+                        </div>
+                        <div class="Cell EveryFont">
+                            <p>Train</p>
+                        </div>
+                        <div class="Cell EveryFont">
+                            <p>Income Tax</p>
+                        </div>
+                        <div class="Cell EveryFont">
+                            <p>Brown Square</p>
+                        </div>
+                        <div class="Cell EveryFont">
+                            <p>Chest</p>
+                        </div>
+                        <div class="Cell EveryFont">
+                            <p>Brown Square</p>
+                        </div>
+                        <div class="Cell SquareBottom HeaderSquare">
+                            <p>GO</p>
                         </div>
                     </div>
                 </div>
