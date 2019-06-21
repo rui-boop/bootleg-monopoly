@@ -6,6 +6,7 @@ export class Dice extends React.Component {
         super(props);
         this.randomNumber = this.randomNumber.bind(this);
         this.endTurn = this.endTurn.bind(this);
+        this.buy = this.buy.bind(this);
         this.state = {
             dice1: 0,
             dice2: 0,
@@ -15,40 +16,14 @@ export class Dice extends React.Component {
                 {
                     money: 2000,
                     position: 0,
-                    properties: [
-                        {
-                            name: 'New York Avenue',
-                            price: 400,
-                            rent: 20,
-                            mortgage: 200,
-                            color: 'red',
-                            houses: 0,
-                            hotels: 0,
-                            position: 1,
-                            isMatch: false
-
-                        }
-                    ],
+                    properties: [],
                     name: 'John',
                     figure: 'puppy',
                 },
                 {
                     money: 2000,
                     position: 0,
-                    properties: [
-                        {
-                            name: 'New York Avenue',
-                            price: 400,
-                            rent: 20,
-                            mortgage: 200,
-                            color: 'red',
-                            houses: 0,
-                            hotels: 0,
-                            position: 2,
-                            isMatch: false
-
-                        }
-                    ],
+                    properties: [],
                     name: 'Jane',
                     figure: 'puppy',
                 }
@@ -64,7 +39,7 @@ export class Dice extends React.Component {
                             color: 'brown',
                             houses: 0,
                             hotels: 0,
-                            position: 1,
+                            position: 1
                         },
                         {
                             name: 'Baltic Avenue',
@@ -74,7 +49,7 @@ export class Dice extends React.Component {
                             color: 'brown',
                             houses: 0,
                             hotels: 0,
-                            position: 2,
+                            position: 3,
                         },
                         {
                             name: 'Reading Railroad',
@@ -84,7 +59,7 @@ export class Dice extends React.Component {
                             color: 'black',
                             houses: 0,
                             hotels: 0,
-                            position: 1,
+                            position: 5,
                         },
                         {
                             name: 'Oriental Avenue',
@@ -94,7 +69,7 @@ export class Dice extends React.Component {
                             color: 'light-blue',
                             houses: 0,
                             hotels: 0,
-                            position: 1,
+                            position: 6,
                         },
                         {
                             name: 'Vermont Avenue',
@@ -104,7 +79,7 @@ export class Dice extends React.Component {
                             color: 'light-blue',
                             houses: 0,
                             hotels: 0,
-                            position: 1,
+                            position: 8,
                         },
                         {
                             name: 'Connecticut Avenue',
@@ -114,7 +89,7 @@ export class Dice extends React.Component {
                             color: 'light-blue',
                             houses: 0,
                             hotels: 0,
-                            position: 1,
+                            position: 9,
                         },
                         {
                             name: 'St. Charles Place',
@@ -124,7 +99,7 @@ export class Dice extends React.Component {
                             color: 'pink',
                             houses: 0,
                             hotels: 0,
-                            position: 1,
+                            position: 11,
                         },
                         {
                             name: 'Electric Company',
@@ -134,7 +109,7 @@ export class Dice extends React.Component {
                             color: 'white',
                             houses: 0,
                             hotels: 0,
-                            position: 1,
+                            position: 12,
                         },
                         {
                             name: 'States Avenue',
@@ -144,7 +119,7 @@ export class Dice extends React.Component {
                             color: 'pink',
                             houses: 0,
                             hotels: 0,
-                            position: 1,
+                            position: 13,
                         },
                         {
                             name: 'Virginia Avenue',
@@ -154,7 +129,7 @@ export class Dice extends React.Component {
                             color: 'pink',
                             houses: 0,
                             hotels: 0,
-                            position: 1,
+                            position: 14,
                         },
                         {
                             name: 'Pennsylvania Railroad',
@@ -164,7 +139,7 @@ export class Dice extends React.Component {
                             color: 'black',
                             houses: 0,
                             hotels: 0,
-                            position: 1,
+                            position: 15,
                         },
                         {
                             name: 'St. James Place',
@@ -174,7 +149,7 @@ export class Dice extends React.Component {
                             color: 'orange',
                             houses: 0,
                             hotels: 0,
-                            position: 1,
+                            position: 16,
                         },
                         {
                             name: 'Tennessee Avenue',
@@ -184,7 +159,7 @@ export class Dice extends React.Component {
                             color: 'orange',
                             houses: 0,
                             hotels: 0,
-                            position: 1,
+                            position: 18,
                         },
                         {
                             name: 'New York Avenue',
@@ -194,7 +169,7 @@ export class Dice extends React.Component {
                             color: 'orange',
                             houses: 0,
                             hotels: 0,
-                            position: 1,
+                            position: 19,
                         },
                         {
                             name: 'Kentucky Avenue',
@@ -204,7 +179,7 @@ export class Dice extends React.Component {
                             color: 'red',
                             houses: 0,
                             hotels: 0,
-                            position: 1,
+                            position: 21,
                         },
                         {
                             name: 'Indiana Avenue',
@@ -214,7 +189,7 @@ export class Dice extends React.Component {
                             color: 'red',
                             houses: 0,
                             hotels: 0,
-                            position: 1,
+                            position: 23,
                         },
                         {
                             name: 'Illinois Avenue',
@@ -224,7 +199,7 @@ export class Dice extends React.Component {
                             color: 'red',
                             houses: 0,
                             hotels: 0,
-                            position: 1,
+                            position: 24,
                         },
                         {
                             name: 'B&O Railroad',
@@ -234,7 +209,7 @@ export class Dice extends React.Component {
                             color: 'red',
                             houses: 0,
                             hotels: 0,
-                            position: 1,
+                            position: 25,
                         },
                         {
                             name: 'Atlantic Avenue',
@@ -244,7 +219,7 @@ export class Dice extends React.Component {
                             color: 'yellow',
                             houses: 0,
                             hotels: 0,
-                            position: 1,
+                            position: 26,
                         },
                         {
                             name: 'Ventnor Avenue',
@@ -254,7 +229,7 @@ export class Dice extends React.Component {
                             color: 'yellow',
                             houses: 0,
                             hotels: 0,
-                            position: 1,
+                            position: 27,
                         },
                         {
                             name: 'Water Works',
@@ -264,7 +239,7 @@ export class Dice extends React.Component {
                             color: 'white',
                             houses: 0,
                             hotels: 0,
-                            position: 1,
+                            position: 28,
                         },
                         {
                             name: 'Marvin Gardens',
@@ -274,7 +249,7 @@ export class Dice extends React.Component {
                             color: 'yellow',
                             houses: 0,
                             hotels: 0,
-                            position: 1,
+                            position: 29,
                         },
                         {
                             name: 'Pacific Avenue',
@@ -284,7 +259,7 @@ export class Dice extends React.Component {
                             color: 'green',
                             houses: 0,
                             hotels: 0,
-                            position: 1,
+                            position: 31,
                         },
                         {
                             name: 'North Carolina Avenue',
@@ -294,7 +269,7 @@ export class Dice extends React.Component {
                             color: 'green',
                             houses: 0,
                             hotels: 0,
-                            position: 1,
+                            position: 32,
                         },
                         {
                             name: 'Pennsylvania Avenue',
@@ -304,7 +279,7 @@ export class Dice extends React.Component {
                             color: 'green',
                             houses: 0,
                             hotels: 0,
-                            position: 1,
+                            position: 34,
                         },
                         {
                             name: 'Short Line',
@@ -314,7 +289,7 @@ export class Dice extends React.Component {
                             color: 'black',
                             houses: 0,
                             hotels: 0,
-                            position: 1,
+                            position: 35,
                         },
                         {
                             name: 'Park Place',
@@ -324,7 +299,7 @@ export class Dice extends React.Component {
                             color: 'blue',
                             houses: 0,
                             hotels: 0,
-                            position: 1,
+                            position: 37,
                         },
                         {
                             name: 'Boardwalk',
@@ -334,7 +309,7 @@ export class Dice extends React.Component {
                             color: 'blue',
                             houses: 0,
                             hotels: 0,
-                            position: 1,
+                            position: 39,
                         },
                     ]
                 }
@@ -373,6 +348,27 @@ export class Dice extends React.Component {
         }
     }
 
+    buy() {
+        console.log('buy is starting');
+        var player = this.state.players[this.state.turn];
+        var property = this.state.bank.property.find(p => p.position == player.position);
+        if (property.owner && property.owner != player.name) {
+            player.money = player.money - property.rent;
+        } else {
+            if (player.money - property.price > 0) {
+                player.money = player.money - property.price;
+                player.properties.push(property.name);
+                property.owner = player.name;
+            } else {
+                
+            }
+          
+        }
+
+
+    
+    }
+
     render() {
         return (
             <div>
@@ -383,6 +379,7 @@ export class Dice extends React.Component {
                 <div className='PaddingButton'> Player 1 Money: ${this.state.players[0].money} / Player 2 Money: ${this.state.players[1].money} </div>
                 <div className='PaddingButton'> Position Player 1: {this.state.players[0].position} / Position Player 2: {this.state.players[1].position} </div>
                 <div className='PaddingButton'> turn: {this.state.turn} </div>
+                <button>Buy</button>
                 <div>
                     <i class="fas fa-dog"></i>
                 </div>
