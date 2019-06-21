@@ -13,8 +13,8 @@ export class Dice extends React.Component {
             isDouble: 0,
             players: [
                 {
-                    money: 0,
-                    position: 5,
+                    money: 2000,
+                    position: 0,
                     properties: [
                         {
                             name: 'New York Avenue',
@@ -24,6 +24,7 @@ export class Dice extends React.Component {
                             color: 'red',
                             houses: 0,
                             hotels: 0,
+                            position: 1,
                             isMatch: false
 
                         }
@@ -32,8 +33,8 @@ export class Dice extends React.Component {
                     figure: 'puppy',
                 },
                 {
-                    money: 0,
-                    position: 7,
+                    money: 2000,
+                    position: 0,
                     properties: [
                         {
                             name: 'New York Avenue',
@@ -43,6 +44,7 @@ export class Dice extends React.Component {
                             color: 'red',
                             houses: 0,
                             hotels: 0,
+                            position: 2,
                             isMatch: false
 
                         }
@@ -52,21 +54,292 @@ export class Dice extends React.Component {
                 }
             ],
             turn: 0,
-            bank: [
-                {
-                    properties: [
+            bank: {
+                    property: [
+                        {
+                            name: 'Mediterranean Avenue',
+                            price: 60,
+                            rent: 2,
+                            mortgage: 30,
+                            color: 'brown',
+                            houses: 0,
+                            hotels: 0,
+                            position: 1,
+                        },
+                        {
+                            name: 'Baltic Avenue',
+                            price: 60,
+                            rent: 4,
+                            mortgage: 30,
+                            color: 'brown',
+                            houses: 0,
+                            hotels: 0,
+                            position: 2,
+                        },
+                        {
+                            name: 'Reading Railroad',
+                            price: 200,
+                            rent: 25,
+                            mortgage: 100,
+                            color: 'black',
+                            houses: 0,
+                            hotels: 0,
+                            position: 1,
+                        },
+                        {
+                            name: 'Oriental Avenue',
+                            price: 100,
+                            rent: 6,
+                            mortgage: 50,
+                            color: 'light-blue',
+                            houses: 0,
+                            hotels: 0,
+                            position: 1,
+                        },
+                        {
+                            name: 'Vermont Avenue',
+                            price: 100,
+                            rent: 6,
+                            mortgage: 50,
+                            color: 'light-blue',
+                            houses: 0,
+                            hotels: 0,
+                            position: 1,
+                        },
+                        {
+                            name: 'Connecticut Avenue',
+                            price: 120,
+                            rent: 8,
+                            mortgage: 60,
+                            color: 'light-blue',
+                            houses: 0,
+                            hotels: 0,
+                            position: 1,
+                        },
+                        {
+                            name: 'St. Charles Place',
+                            price: 140,
+                            rent: 10,
+                            mortgage: 70,
+                            color: 'pink',
+                            houses: 0,
+                            hotels: 0,
+                            position: 1,
+                        },
+                        {
+                            name: 'Electric Company',
+                            price: 150,
+                            rent: 50,
+                            mortgage: 75,
+                            color: 'white',
+                            houses: 0,
+                            hotels: 0,
+                            position: 1,
+                        },
+                        {
+                            name: 'States Avenue',
+                            price: 140,
+                            rent: 10,
+                            mortgage: 70,
+                            color: 'pink',
+                            houses: 0,
+                            hotels: 0,
+                            position: 1,
+                        },
+                        {
+                            name: 'Virginia Avenue',
+                            price: 160,
+                            rent: 12,
+                            mortgage: 80,
+                            color: 'pink',
+                            houses: 0,
+                            hotels: 0,
+                            position: 1,
+                        },
+                        {
+                            name: 'Pennsylvania Railroad',
+                            price: 200,
+                            rent: 25,
+                            mortgage: 100,
+                            color: 'black',
+                            houses: 0,
+                            hotels: 0,
+                            position: 1,
+                        },
+                        {
+                            name: 'St. James Place',
+                            price: 180,
+                            rent: 14,
+                            mortgage: 90,
+                            color: 'orange',
+                            houses: 0,
+                            hotels: 0,
+                            position: 1,
+                        },
+                        {
+                            name: 'Tennessee Avenue',
+                            price: 180,
+                            rent: 14,
+                            mortgage: 90,
+                            color: 'orange',
+                            houses: 0,
+                            hotels: 0,
+                            position: 1,
+                        },
                         {
                             name: 'New York Avenue',
-                            price: 400,
-                            rent: 20,
-                            mortgage: 200,
+                            price: 200,
+                            rent: 16,
+                            mortgage: 100,
+                            color: 'orange',
+                            houses: 0,
+                            hotels: 0,
+                            position: 1,
+                        },
+                        {
+                            name: 'Kentucky Avenue',
+                            price: 220,
+                            rent: 18,
+                            mortgage: 110,
                             color: 'red',
                             houses: 0,
                             hotels: 0,
-                        }
+                            position: 1,
+                        },
+                        {
+                            name: 'Indiana Avenue',
+                            price: 220,
+                            rent: 18,
+                            mortgage: 110,
+                            color: 'red',
+                            houses: 0,
+                            hotels: 0,
+                            position: 1,
+                        },
+                        {
+                            name: 'Illinois Avenue',
+                            price: 240,
+                            rent: 20,
+                            mortgage: 120,
+                            color: 'red',
+                            houses: 0,
+                            hotels: 0,
+                            position: 1,
+                        },
+                        {
+                            name: 'B&O Railroad',
+                            price: 200,
+                            rent: 25,
+                            mortgage: 100,
+                            color: 'red',
+                            houses: 0,
+                            hotels: 0,
+                            position: 1,
+                        },
+                        {
+                            name: 'Atlantic Avenue',
+                            price: 260,
+                            rent: 22,
+                            mortgage: 130,
+                            color: 'yellow',
+                            houses: 0,
+                            hotels: 0,
+                            position: 1,
+                        },
+                        {
+                            name: 'Ventnor Avenue',
+                            price: 260,
+                            rent: 22,
+                            mortgage: 130,
+                            color: 'yellow',
+                            houses: 0,
+                            hotels: 0,
+                            position: 1,
+                        },
+                        {
+                            name: 'Water Works',
+                            price: 150,
+                            rent: 50,
+                            mortgage: 75,
+                            color: 'white',
+                            houses: 0,
+                            hotels: 0,
+                            position: 1,
+                        },
+                        {
+                            name: 'Marvin Gardens',
+                            price: 280,
+                            rent: 24,
+                            mortgage: 140,
+                            color: 'yellow',
+                            houses: 0,
+                            hotels: 0,
+                            position: 1,
+                        },
+                        {
+                            name: 'Pacific Avenue',
+                            price: 300,
+                            rent: 26,
+                            mortgage: 150,
+                            color: 'green',
+                            houses: 0,
+                            hotels: 0,
+                            position: 1,
+                        },
+                        {
+                            name: 'North Carolina Avenue',
+                            price: 300,
+                            rent: 26,
+                            mortgage: 150,
+                            color: 'green',
+                            houses: 0,
+                            hotels: 0,
+                            position: 1,
+                        },
+                        {
+                            name: 'Pennsylvania Avenue',
+                            price: 320,
+                            rent: 28,
+                            mortgage: 160,
+                            color: 'green',
+                            houses: 0,
+                            hotels: 0,
+                            position: 1,
+                        },
+                        {
+                            name: 'Short Line',
+                            price: 200,
+                            rent: 25,
+                            mortgage: 100,
+                            color: 'black',
+                            houses: 0,
+                            hotels: 0,
+                            position: 1,
+                        },
+                        {
+                            name: 'Park Place',
+                            price: 350,
+                            rent: 35,
+                            mortgage: 175,
+                            color: 'blue',
+                            houses: 0,
+                            hotels: 0,
+                            position: 1,
+                        },
+                        {
+                            name: 'Boardwalk',
+                            price: 400,
+                            rent: 50,
+                            mortgage: 200,
+                            color: 'blue',
+                            houses: 0,
+                            hotels: 0,
+                            position: 1,
+                        },
                     ]
                 }
-            ]
+              
+            
 
 
         };
@@ -89,10 +362,9 @@ export class Dice extends React.Component {
     }
 
     endTurn() {
-        var numberOfCells;
-        if (this.state.position > numberOfCells) {
-            this.state.players.money = this.state.players.money + 200;
-            this.state.position = this.state.position - numberOfCells;
+        if (this.state.position > 10) {
+            this.state.players[this.state.turn].money = this.state.players[this.state.turn].money + 200;
+            this.state.position = this.state.position % 10;
         }
         if (this.state.turn >= this.state.players.length - 1) {
             this.setState({ turn: 0 })
@@ -108,7 +380,7 @@ export class Dice extends React.Component {
                 <button onClick={this.randomNumber.bind(this)}>Roll The Dice!</button>
                 <div> {this.state.isDouble} </div>
                 <button onClick={this.endTurn.bind(this)}>End Turn</button>
-                <div> Money: ${this.state.players.money} </div>
+                <div> Player 1 Money: ${this.state.players[0].money} / Player 2 Money: ${this.state.players[1].money} </div>
                 <div> Position Player 1: {this.state.players[0].position} / Position Player 2: {this.state.players[1].position} </div>
                 <div> turn: {this.state.turn} </div>
                 <div>
@@ -197,31 +469,39 @@ export class Dice extends React.Component {
                             <p>FREE PARKING</p>
                         </div>
                         <div class="Cell EveryFont">
-                            <p>Red Space</p>
+                            <p>Kentucky Avenue</p>
+                            <p>Price: ${this.state.bank.property[0].price}</p>
                         </div>
                         <div class="Cell EveryFont">
                             <p>Chance</p>
                         </div>
-                        <div class="Cell EveryFont">
-                            <p>Red Space</p>
+                        <div class="Cell">
+                            <p>Indiana Avenue</p>
+                            <p>Price: ${this.state.bank.property[0].price}</p>
                         </div>
-                        <div class="Cell EveryFont">
-                            <p>Red Space</p>
+                        <div class="Cell">
+                            <p>Illinois Avenue</p>
+                            <p>Price: ${this.state.bank.property[0].price}</p>
                         </div>
-                        <div class="Cell EveryFont">
-                            <p>Train</p>
+                        <div class="Cell">
+                            <p>B&O Railroad</p>
+                            <p>Price: ${this.state.bank.property[0].price}</p>
                         </div>
-                        <div class="Cell EveryFont">
-                            <p>Yellow Space</p>
+                        <div class="Cell">
+                            <p>Atlantic Avenue</p>
+                            <p>Price: ${this.state.bank.property[0].price}</p>
                         </div>
-                        <div class="Cell EveryFont">
-                            <p>Yellow Space</p>
+                        <div class="Cell">
+                            <p>Ventnor Avenue</p>
+                            <p>Price: ${this.state.bank.property[0].price}</p>
                         </div>
-                        <div class="Cell EveryFont">
-                            <p>Water</p>
+                        <div class="Cell">
+                            <p>Water Works</p>
+                            <p>Price: ${this.state.bank.property[0].price}</p>
                         </div>
-                        <div class="Cell EveryFont">
-                            <p>Yellow Space</p>
+                        <div class="Cell">
+                            <p>Marvin Gardens</p>
+                            <p>Price: ${this.state.bank.property[0].price}</p>
                         </div>
                         <div class="Cell SquareBottom HeaderSquare">
                             <p>GO TO JAIL</p>
@@ -260,8 +540,8 @@ export class Dice extends React.Component {
                         </div>
                     </div>
                     <div class="Row">
-                        <div class="Cell EveryFont">
-                            <p>Orange Square</p>
+                        <div class="Cell">
+                            <p>NY Avenue</p>
                         </div>
                         <div class="Cell EveryFont">
                             <p>Orange Square</p>
