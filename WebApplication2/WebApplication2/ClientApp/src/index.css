@@ -138,3 +138,7 @@
 .EndTurn {
     transform: translate(313%, 1530%);
 }
+
+.Buy {
+    transform: translate(570%, 1536%);
+}

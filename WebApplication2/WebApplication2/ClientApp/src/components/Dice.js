@@ -379,7 +379,7 @@ export class Dice extends React.Component {
                 <div className='PaddingButton'> Player 1 Money: ${this.state.players[0].money} / Player 2 Money: ${this.state.players[1].money} </div>
                 <div className='PaddingButton'> Position Player 1: {this.state.players[0].position} / Position Player 2: {this.state.players[1].position} </div>
                 <div className='PaddingButton'> turn: {this.state.turn} </div>
-                <button>Buy</button>
+                <button className='PaddingButton TranslateButton Buy'>Buy</button>
                 <div>
                     <i class="fas fa-dog"></i>
                 </div>
